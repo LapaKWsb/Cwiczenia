@@ -5,24 +5,16 @@ namespace Zadanie5
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Podaj dwie liczby:");
-            int liczba1 = Convert.ToInt32(Console.ReadLine());
-            int liczba2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Podaj dwie liczby");
 
-            if (liczba1 > liczba2)
-            {
-                Console.WriteLine("Większa liczba: " + liczba1);
-            }
-            else if (liczba2 > liczba1)
-            {
-                Console.WriteLine("Większa liczba: " + liczba2);
-            }
-            else
-            {
-                Console.WriteLine("Liczby są równe");
-            }
+            int liczba1 = int.Parse(Console.ReadLine());
+            int liczba2 = int.Parse(Console.ReadLine());
+
+            int wieksza = Math.Max(liczba1, liczba2);
+
+            Console.WriteLine("Większa liczba to: " + wieksza);
         }
     }
 }
