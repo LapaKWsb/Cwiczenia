@@ -7,7 +7,7 @@ namespace Zadanie4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Podaj cztery liczby całkowite: a, b, c, d");
+            Console.WriteLine("Podaj cztery liczby całkowite abcd");
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
             int c = Convert.ToInt32(Console.ReadLine());
